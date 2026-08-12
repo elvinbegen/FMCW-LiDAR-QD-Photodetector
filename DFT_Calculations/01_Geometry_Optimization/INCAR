@@ -1,0 +1,48 @@
+SYSTEM = 1.5
+
+NPAR = 7
+
+ISIF = 3
+
+- - Ionic Relaxation - - - - - - - - - - -
+
+ISMEAR = 0 ; SIGMA  = 0.05
+
+NSW = 300  ; IBRION = 2
+
+ISPIN = 1
+
+- - Electronic Relaxation - - - - - - - - 
+
+ENCUT = 700                   eV(29.4 Ryd)
+
+EDIFF = 1E-5                  Specifies the global break condition for the electronic SC-loop
+
+ALGO = Fast                   Algorithm: it can be FAST or NORMAL
+
+!LORBIT = 11                  Partial DOS projected onto molecular orbitals, creates PROCAR
+
+LVDW= .TRUE.                  Van der waals interaction correction to GGA functional
+
+- - - - - - - - - - - - - - - - - - - - -
+
+LWAVE = .F.        wavecar
+LCHARG = .F.       chgcar
+LAECHG = .FALSE.       for BADER
+LVHAR = .FALSE.        for LOCPOT
+
+- - - - - - - - - - - - - - - - - - - - -
+
+!NEDOS = 3000
+
+!ICHARG = 11
+
+- - - - - - DFT + U - - - - - - - - - - - 
+GGA+U
+  LDAU      = .TRUE.
+  LDAUTYPE  = 2
+  LDAUL     = -1 2 -1  
+  LDAUU     = 0.0 4.00 0.00  
+  LDAUJ     = 0.0 0.00 0.00 
+  LDAUPRINT = 2
+  LMAXMIX   = 4 
