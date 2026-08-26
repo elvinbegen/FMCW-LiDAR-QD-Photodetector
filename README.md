@@ -18,7 +18,7 @@ System-level Python simulations and signal processing algorithms are outlined in
 - **Objective:** Simulating the optical behavior and absorption characteristics of the modeled QD active layer.
 - **Status:** Parameter configuration across Lumerical modules is currently in progress to bridge the gap between DFT outputs and component-level performance.
 
-### 3. Experimental Setup (Michelson Interferometer)
+### 3. Experimental Setup
 - **Objective:** Building a physical proof-of-concept for FMCW LiDAR principles.
 - **Hardware:** Visible-light setup utilizing a 650 nm laser diode, a beam splitter, and a silicon photodiode.
 - **Status:** Exact component distance metrics and optical hardware alignment are established to observe interference patterns and validate beat frequency concepts.
