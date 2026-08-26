@@ -29,8 +29,7 @@ The repository is structured to eventually house a full system simulation. Direc
 - `DFT_Calculations/Ag2Te/`: Contains calculation parameters and extracted optical properties.
 - `Lumerical_Simulations/QD_PD/`: FDTD simulation files and scripts.
 - `Optical_Experiment/Michelson/`: Schematics, alignment metrics, and physical setup documentation.
-- `System_Simulation/FMCW/` *(In Progress)*: Python architecture for chirp generation, range estimation, and system noise modeling.
-- `Signal_Processing/` *(Planned)*: Advanced signal extraction techniques.
+- `System_Simulation/FMCW/` *(In Progress)*: 
 
 ## Future Work
 - Integration of the Lumerical detector model into the FMCW simulation environment.
