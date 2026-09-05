@@ -15,5 +15,6 @@ Contains the input files for non-self-consistent calculations. The k-point mesh 
 
 ### 4. `04_Optical_Properties`
 Contains the parameters for calculating frequency-dependent dielectric matrices (`LOPTICS = .TRUE.`). 
+* First, bulk optical properties found using PBE Density Functioal theory. Then, hyperbolic Brus Equation together with scissor operator will be used to correct the bandgap and optical calculations will be made again.
 *   **Data Processing:** Includes custom Python scripts utilized for resolving dimensional mismatches in the raw optical data arrays and plotting the dielectric functions.
 *   **Pending Operation:** The application of a scissor operator is scheduled for the subsequent phase to correct the standard DFT bandgap underestimation present in the current raw optical spectra.
